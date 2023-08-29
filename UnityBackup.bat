@@ -12,7 +12,7 @@ pushd "%source%"
 set "sourceDir=!CD!"
 popd
 
-powershell -Command "robocopy '%source%' '%destination%' /E /Z /ZB /R:5 /W:5 /MT:8 /XD Library Temp /XF *.meta *.unityproj *.sln *.csproj *.userprefs /TEE /NP /ETA /LOG+:backup_log.txt
+powershell -Command "robocopy '%source%' '%destination%' /E /Z /ZB /R:5 /W:5 /MT:8 /XD Library Temp /XF *.unityproj *.sln *.csproj *.userprefs /TEE /NP /ETA /LOG+:backup_log.txt
 
 echo Backup completed!
 
